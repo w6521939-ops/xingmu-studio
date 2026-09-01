@@ -2,6 +2,7 @@ import { spawn } from 'node:child_process'
 import { copyFile, mkdtemp, mkdir, rm, writeFile } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import path from 'node:path'
+import { exportWithRemotion, isRemotionAvailable } from './remotionRenderService.js'
 
 const maxTimelineItems = 120
 const maxTimelineSeconds = 30 * 60
@@ -352,10 +353,15 @@ export async function exportTimelineVideo({
   subtitleCues = [],
   subtitleStyle = {},
   audioTracks = [],
+  renderRuntime = 'ffmpeg',
   onProgress = () => undefined,
   signal,
 }) {
-  if (!ffmpegPath || !outputPath) throw new Error('缺少 FFmpeg 或导出路径')
+  if (!outputPath) throw new Error('缺少导出路径')
+  if (renderRuntime === 'remotion') {
+    return exportWithRemotion({ outputPath, items, width, height, transition, subtitlesEnabled, subtitleCues, subtitleStyle, audioTracks, onProgress, signal })
+  }
+  if (!ffmpegPath) throw new Error('缺少 FFmpeg 路径')
   if (![360, 540, 1080, 1920].includes(width) || ![640, 960, 1080, 1920].includes(height)) {
     throw new Error('不支持的成片分辨率')
   }

@@ -1,0 +1,21 @@
+{
+  "name": "manju-remotion-composer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Remotion 渲染引擎 — 星幕工坊第二渲染后端",
+  "scripts": {
+    "dev": "remotion studio",
+    "render": "remotion render",
+    "build": "remotion bundle"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "^4.0.0",
+    "@remotion/renderer": "^4.0.0",
+    "@remotion/bundler": "^4.0.0"
+  },
+  "devDependencies": {
+    "@remotion/cli": "^4.0.0"
+  }
+}

@@ -2,6 +2,8 @@ import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } fr
 import { createPortal, flushSync } from 'react-dom'
 import './App.css'
 import StudioWorkbench from './components/StudioWorkbench.jsx'
+import { ProductionBoard } from './components/ProductionBoard.jsx'
+import './components/ProductionBoard.css'
 import {
   applyBailianStatusToSettings,
   bailianProviderName,
@@ -8160,7 +8162,15 @@ function App() {
         onConfirm={confirmZeroCostSafety}
         onOpenOfficial={openBailianFreeQuotaSettings}
       />}
-      {oneClickRun && page !== 'studio' && <OneClickProductionDrawer
+      {oneClickRun && page !== 'studio' && !oneClickProgressMinimized && <ProductionBoard
+        run={oneClickRun}
+        costEstimate={oneClickPlan?.costEstimate}
+        onMinimize={() => setOneClickProgressMinimized(true)}
+        onPause={pauseOneClickProduction}
+        onResume={resumeOneClickProduction}
+        onStop={stopOneClickProduction}
+      />}
+      {oneClickRun && page !== 'studio' && oneClickProgressMinimized && <OneClickProductionDrawer
         run={oneClickRun}
         minimized={oneClickProgressMinimized}
         onMinimize={() => setOneClickProgressMinimized(true)}
