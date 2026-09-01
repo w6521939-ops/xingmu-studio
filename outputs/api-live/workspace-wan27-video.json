@@ -1,0 +1,19 @@
+{
+  "request_id": "bac9dafc-493e-95b4-b627-4895834aed4d",
+  "output": {
+    "task_id": "def3e583-ccbb-48e9-b0be-2d56e1f106f4",
+    "task_status": "SUCCEEDED",
+    "submit_time": "2026-08-06 00:13:41.442",
+    "scheduled_time": "2026-08-06 00:13:41.483",
+    "end_time": "2026-08-06 00:14:03.720",
+    "video_url": "https://dashscope-a717.oss-accelerate.aliyuncs.com/1d/3f/20260806/11df1eac/81288089-metadata_user_6e39e042abda3fe0.mp4?Expires=1786032842&OSSAccessKeyId=LTAI5tJjG6wsHad1Sf7iezX4&Signature=XY%2BQy59Rh9buh7%2FbBKYp0ht4RZM%3D",
+    "orig_prompt": "A gentle breeze moves the flowers and a few petals drift across the frame. The camera slowly pushes toward the wooden door as it opens halfway. Keep the exact shop architecture and floral arrangement."
+  },
+  "usage": {
+    "video_count": 1,
+    "duration": 5,
+    "SR": 720,
+    "output_video_duration": 5,
+    "input_video_duration": 0
+  }
+}

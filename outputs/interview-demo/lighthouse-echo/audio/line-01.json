@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "asset": {
+    "id": "voice-line-msgbbzx7-ace9abc317",
+    "kind": "voice-line",
+    "source": "bailian-download",
+    "fileName": "line-01.wav",
+    "mimeType": "audio/wav",
+    "bytes": 153644,
+    "duration": 3.2,
+    "sampleRate": 24000,
+    "sha256": "4a9612dd0a72b019980ddc7dd784d81cf346ea596992b5f3e70c2dfb72b5ab1a",
+    "importedAt": "2026-08-05T16:40:09.892Z",
+    "mediaUrl": "manju-media://voice/28df78113167e933e2e5/voice-line-msgbbzx7-ace9abc317.wav",
+    "model": "qwen3-tts-flash",
+    "voiceId": "Cherry",
+    "requestId": "2f6ca047-9fc4-9eea-a80c-f7b4eaa87dad"
+  },
+  "mediaUrl": "manju-media://voice/28df78113167e933e2e5/voice-line-msgbbzx7-ace9abc317.wav",
+  "model": "qwen3-tts-flash",
+  "requestId": "2f6ca047-9fc4-9eea-a80c-f7b4eaa87dad",
+  "usage": {
+    "characters": 28
+  }
+}

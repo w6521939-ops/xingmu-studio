@@ -1,0 +1,157 @@
+{
+  "name": "xingmu-studio",
+  "productName": "星幕工坊",
+  "description": "本地优先的 Windows AI 漫剧制作工作台",
+  "author": "星幕工坊",
+  "private": true,
+  "version": "1.37.0",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "start": "npm run build && electron .",
+    "start:free": "set BAILIAN_FREE_TIER_CONFIRMED=1&& npm run build && electron .",
+    "demo:lighthouse:dry-run": "node scripts/build-lighthouse-demo.mjs",
+    "demo:lighthouse:free": "set BAILIAN_FREE_TIER_CONFIRMED=1&& node scripts/build-lighthouse-demo.mjs --execute",
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "backend:start": ".\\.venv\\Scripts\\python.exe -m backend.app",
+    "test:backend": ".\\.venv\\Scripts\\python.exe -m pytest backend\\tests -q",
+    "preview": "vite preview",
+    "generate:icon": "electron scripts/generate-icon.mjs",
+    "capture:ui": "npm run build && electron scripts/capture-preview.mjs",
+    "capture:studio": "npm run build && electron scripts/capture-studio-workbench.mjs",
+    "tutorial:studio": "npm run build && electron scripts/record-studio-tutorial.mjs",
+    "capture:script-organizer": "npm run build && electron scripts/capture-script-organizer.mjs",
+    "capture:scene-metadata": "npm run build && electron scripts/capture-scene-metadata.mjs",
+    "capture:voice-audition": "npm run build && electron scripts/capture-voice-audition.mjs",
+    "test:project": "npm run build && electron scripts/test-project-persistence.mjs",
+    "test:project-name": "npm run build && electron scripts/test-project-name-edit.mjs",
+    "test:dialogue-split": "node scripts/test-dialogue-split-service.mjs",
+    "test:dialogue-split-ui": "npm run build && electron scripts/test-dialogue-split-ui.mjs",
+    "test:script-organizer": "node scripts/test-script-organizer-service.mjs",
+    "test:script-organizer-ui": "npm run build && electron scripts/test-script-organizer-ui.mjs",
+    "test:scene-metadata": "node scripts/test-scene-metadata-service.mjs",
+    "test:scene-metadata-ui": "npm run build && electron scripts/test-scene-metadata-ui.mjs",
+    "test:voice-audition": "node scripts/test-voice-audition-service.mjs",
+    "test:character-voice": "node scripts/test-character-voice-service.mjs",
+    "test:bailian-tts": "node scripts/test-bailian-tts-service.mjs",
+    "test:voice-audition-ui": "npm run build && electron scripts/test-voice-audition-ui.mjs",
+    "test:asset-library": "node scripts/test-asset-library-service.mjs",
+    "test:prop-assets": "node scripts/test-prop-asset-service.mjs",
+    "test:asset-library-ui": "npm run build && electron scripts/test-asset-library-ui.mjs",
+    "test:project-portability": "node scripts/test-project-portability-service.mjs",
+    "test:portable-format-compatibility": "node scripts/test-portable-manifest-compatibility.mjs",
+    "test:managed-media-cleanup": "node scripts/test-managed-media-cleanup-service.mjs",
+    "test:project-portability-ui": "npm run build && electron scripts/test-project-portability-ui.mjs",
+    "test:character-image-request": "node scripts/test-character-image-request-service.mjs",
+    "test:character-image-api-ui": "npm run build && electron scripts/test-character-image-api-ui.mjs",
+    "test:storyboard-image-request": "node scripts/test-storyboard-image-request-service.mjs",
+    "test:storyboard-image-api-ui": "npm run build && electron scripts/test-storyboard-image-api-ui.mjs",
+    "test:shot-video-request": "node scripts/test-shot-video-request-service.mjs",
+    "test:shot-video-asset": "node scripts/test-shot-video-asset-service.mjs",
+    "test:shot-video-model": "node scripts/test-shot-video-model.mjs",
+    "test:shot-video-local-ui": "npm run build && electron scripts/test-local-shot-video-ui.mjs",
+    "test:shot-video-api-ui": "npm run build && electron scripts/test-shot-video-api-ui.mjs",
+    "test:one-click-production-plan": "node scripts/test-one-click-production-plan.mjs",
+    "test:one-click-production-controller": "node scripts/test-one-click-production-controller.mjs",
+    "test:one-click-production-ui": "npm run build && electron scripts/test-one-click-production-ui.mjs",
+    "test:studio-production-prep-ui": "npm run build && electron scripts/test-studio-production-prep-ui.mjs",
+    "test:studio-production-flow-ui": "npm run build && electron scripts/test-studio-production-flow-ui.mjs",
+    "test:studio-local-export-ui": "npm run build && electron scripts/test-studio-local-export-ui.mjs",
+    "test:studio-guided-workflow-ui": "npm run build && electron scripts/test-studio-guided-workflow-ui.mjs",
+    "test:managed-voice-reference": "node scripts/test-managed-voice-reference.mjs",
+    "rebuild:local-audio": "node scripts/rebuild-local-production-with-audio.mjs",
+    "test:v39-ui": "npm run build && electron scripts/test-v39-one-click-ui.mjs",
+    "test:bailian-video-service": "node scripts/test-bailian-video-service.mjs",
+    "audit:character-image-package": "node scripts/audit-character-image-package.mjs",
+    "audit:asset-library-package": "node scripts/audit-asset-library-package.mjs",
+    "audit:storyboard-image-package": "node scripts/audit-storyboard-image-package.mjs",
+    "audit:shot-video-package": "node scripts/audit-shot-video-package.mjs",
+    "audit:one-click-production-package": "node scripts/audit-one-click-production-package.mjs",
+    "audit:project-portability-package": "node scripts/audit-project-portability-package.mjs",
+    "test:settings-ui": "npm run build && electron scripts/test-settings-ui.mjs",
+    "test:settings-performance": "npm run build && electron scripts/test-settings-performance.mjs",
+    "test:bailian-provider": "node scripts/test-bailian-provider-service.mjs",
+    "test:bailian-controlled-generation": "node scripts/test-bailian-controlled-generation.mjs",
+    "test:generated-image-storage": "node scripts/test-generated-image-file-storage.mjs",
+    "test:generated-image-recovery-ui": "npm run build && electron scripts/test-generated-image-recovery-ui.mjs",
+    "test:bailian-integration": "npm run build && electron scripts/test-bailian-provider-integration.mjs",
+    "test:bailian-script-mapper": "node scripts/test-bailian-script-mapper.mjs",
+    "test:bailian-script-ui": "npm run build && electron scripts/test-bailian-script-ui.mjs",
+    "test:studio-six-stage-editable-ui": "npm run build && electron scripts/test-studio-six-stage-editable-ui.mjs",
+    "test:lighthouse-demo-ui": "npm run build && electron scripts/test-lighthouse-demo-ui.mjs",
+    "test:product-acceptance": "npm run build && electron scripts/test-product-acceptance-ui.mjs",
+    "test:user-data-only": "npm run build && electron scripts/test-user-data-only-ui.mjs",
+    "test:native-menu": "npm run build && electron scripts/test-native-file-menu.mjs",
+    "test:video": "node scripts/test-video-export.mjs",
+    "test:subtitle": "node scripts/test-subtitle-service.mjs",
+    "test:timeline-history": "node scripts/test-timeline-history.mjs",
+    "test:timeline-edit": "node scripts/test-shot-timeline-edit.mjs",
+    "test:episode-production": "node scripts/test-episode-production-service.mjs",
+    "test:episode-production-ui": "npm run build && electron scripts/test-episode-production-ui.mjs",
+    "package:win": "npm run build && electron-builder --win nsis"
+  },
+  "dependencies": {
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "electron": "^43.1.1",
+    "electron-builder": "^26.15.3",
+    "ffmpeg-static": "^5.3.0",
+    "oxlint": "^1.71.0",
+    "vite": "^8.1.1"
+  },
+  "build": {
+    "appId": "com.xingmu.studio",
+    "productName": "星幕工坊",
+    "asar": true,
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "main.js",
+      "preload.cjs",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "node_modules/ffmpeg-static/ffmpeg.exe",
+        "to": "bin/ffmpeg.exe"
+      },
+      {
+        "from": "node_modules/ffmpeg-static/LICENSE",
+        "to": "licenses/ffmpeg-static-GPL-3.0.txt"
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "to": "THIRD_PARTY_NOTICES.md"
+      }
+    ],
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "${productName}-Setup-${version}-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "星幕工坊"
+    }
+  }
+}

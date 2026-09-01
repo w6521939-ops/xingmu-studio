@@ -1,0 +1,17 @@
+file 'D:/漫剧创作-源码-1.37.0-20260805/outputs/tutorial/星幕工坊-全流程教学/frames/step-01.png'
+duration 3.4
+file 'D:/漫剧创作-源码-1.37.0-20260805/outputs/tutorial/星幕工坊-全流程教学/frames/step-02.png'
+duration 3.4
+file 'D:/漫剧创作-源码-1.37.0-20260805/outputs/tutorial/星幕工坊-全流程教学/frames/step-03.png'
+duration 3.4
+file 'D:/漫剧创作-源码-1.37.0-20260805/outputs/tutorial/星幕工坊-全流程教学/frames/step-04.png'
+duration 3.4
+file 'D:/漫剧创作-源码-1.37.0-20260805/outputs/tutorial/星幕工坊-全流程教学/frames/step-05.png'
+duration 3.4
+file 'D:/漫剧创作-源码-1.37.0-20260805/outputs/tutorial/星幕工坊-全流程教学/frames/step-06.png'
+duration 3.4
+file 'D:/漫剧创作-源码-1.37.0-20260805/outputs/tutorial/星幕工坊-全流程教学/frames/step-07.png'
+duration 3.4
+file 'D:/漫剧创作-源码-1.37.0-20260805/outputs/tutorial/星幕工坊-全流程教学/frames/step-08.png'
+duration 3.4
+file 'D:/漫剧创作-源码-1.37.0-20260805/outputs/tutorial/星幕工坊-全流程教学/frames/step-08.png'

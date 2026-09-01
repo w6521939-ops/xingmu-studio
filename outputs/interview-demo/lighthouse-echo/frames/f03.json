@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "purpose": "storyboard",
+  "model": "wan2.7-image-pro",
+  "requestId": "053d90e6-5ed5-9214-875c-fd7c39b47052",
+  "taskId": "339a62a2-123c-4f73-8ac0-f6aa564def35",
+  "usage": {
+    "image_count": 1,
+    "input_tokens": 20098,
+    "output_tokens": 2,
+    "total_tokens": 20100,
+    "size": "1536*1024"
+  },
+  "image": {
+    "mediaUrl": "manju-media://generated-image/image-msgb6h0k-d862834a",
+    "mime": "image/png",
+    "bytes": 2788405,
+    "fileName": "storyboard-2026-08-05T16-35-52-087Z.png",
+    "assetId": "image-msgb6h0k-d862834a",
+    "localPath": ".manju-studio/outputs/images/storyboard-2026-08-05T16-35-52-087Z.png",
+    "sha256": "11420384f2d59c4e74341f9a2c3d301fbc901ecfb6c407a3f8109fe2098ad7d7"
+  }
+}

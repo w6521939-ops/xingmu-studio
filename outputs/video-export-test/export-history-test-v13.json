@@ -1,0 +1,15 @@
+[
+  {
+    "outputPath": "D:\\漫剧创作-源码-1.37.0-20260805\\outputs\\video-export-test\\timeline-test.mp4",
+    "projectLocalId": "local-video-export-test",
+    "projectName": "时间线测试（覆盖记录）",
+    "exportedAt": "2026-08-05T13:11:37.388Z",
+    "duration": 1.2999999999999998,
+    "segmentCount": 2,
+    "mixedTrackCount": 2,
+    "resolution": "1920x1080",
+    "episodeId": 2,
+    "episodeTitle": "第二集",
+    "scope": "episode"
+  }
+]

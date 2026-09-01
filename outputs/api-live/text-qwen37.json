@@ -1,0 +1,30 @@
+{
+  "model": "qwen3.7-plus",
+  "id": "chatcmpl-a5aaf8a9-292c-9fe3-a467-4bc7e7e26bce",
+  "choices": [
+    {
+      "message": {
+        "content": "{\"ok\": true, \"message\": \"星幕工坊文本接口正常。\"}",
+        "reasoning_content": "思考过程：1.  **分析请求**：\n    *   用户要求输出一个JSON对象。\n    *   包含两个字段：`ok` (布尔值 `true`) 和 `message` (字符串 `\"星幕工坊文本接口正常。\"`)。\n    *   系统提示词要求：只输出合法JSON，不要Markdown。\n2.  **构建JSON**：\n    ```json\n    {\n      \"ok\": true,\n      \"message\": \"星幕工坊文本接口正常。\"\n    }\n    ```\n3.  **格式化输出**：\n    *   去除Markdown标记（如 ```json ... ```）。\n    *   确保是纯JSON字符串。\n    ```json\n    {\"ok\": true, \"message\": \"星幕工坊文本接口正常。\"}\n    ```\n4.  **最终检查**：\n    *   合法JSON？是。\n    *   无Markdown？是。\n    *   字段正确？是。\n    *   值正确？是。\n    *   注意标点符号，用户提示中是“星幕工坊文本接口正常。”，包含句号。\n\n输出结果：\n{\"ok\": true, \"message\": \"星幕工坊文本接口正常。\"}",
+        "role": "assistant"
+      },
+      "index": 0,
+      "finish_reason": "stop"
+    }
+  ],
+  "created": 1785942181,
+  "object": "chat.completion",
+  "usage": {
+    "total_tokens": 342,
+    "completion_tokens": 299,
+    "prompt_tokens": 43,
+    "completion_tokens_details": {
+      "reasoning_tokens": 277,
+      "text_tokens": 299
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 43
+    }
+  }
+}

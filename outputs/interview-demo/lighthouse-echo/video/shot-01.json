@@ -1,0 +1,19 @@
+{
+  "request_id": "aa134b9f-3c96-9473-a38f-5a9cc4308c63",
+  "output": {
+    "task_id": "86c0a1ee-0533-43b6-80d5-db065395cab3",
+    "task_status": "SUCCEEDED",
+    "submit_time": "2026-08-06 00:40:06.872",
+    "scheduled_time": "2026-08-06 00:40:06.929",
+    "end_time": "2026-08-06 00:40:27.867",
+    "video_url": "https://dashscope-a717.oss-accelerate.aliyuncs.com/1d/6c/20260806/11df1eac/59874416-metadata_user_f94bf422ebe79ff3.mp4?Expires=1786034426&OSSAccessKeyId=LTAI5tJjG6wsHad1Sf7iezX4&Signature=R6sXIUBkha4rpq5o1DCQ4SSOAzs%3D",
+    "orig_prompt": "Maintain exact identity, clothing, flashlight and lighthouse continuity between the supplied first and last frames. Lin Wan steadily climbs the wet stone stairs through violent rain while the camera slowly pushes forward and rises with her. Natural coat and hair movement, flashlight beam sweeps across puddles, cinematic realistic 3D animation. End exactly at the doorway pose in the last frame. No extra people, no duplicate limbs, no speaking, no subtitles, no text."
+  },
+  "usage": {
+    "video_count": 1,
+    "duration": 5,
+    "SR": 720,
+    "output_video_duration": 5,
+    "input_video_duration": 0
+  }
+}

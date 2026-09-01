@@ -1,0 +1,111 @@
+{
+  "title": "云港零点钟声",
+  "logline": "失忆调查员在零点钟声里追查一段被删除的城市记忆。",
+  "theme": "记忆能被删除，但选择留下的痕迹无法抹去。",
+  "visualStyle": "天蓝与深靛渐变的未来都市漫画，潮湿镜面与电影光影。",
+  "characters": [
+    {
+      "id": "C01",
+      "name": "林澈",
+      "identity": "失忆调查员，男主",
+      "appearance": "黑色短发，灰蓝眼睛，右眉有浅疤。",
+      "costume": "深蓝风衣与银色记忆终端。",
+      "voice": "青年男声，低沉克制。",
+      "forbiddenDrift": ["不得改变右眉浅疤", "不得更换银色终端"]
+    },
+    {
+      "id": "C02",
+      "name": "阿蓝",
+      "identity": "城市档案馆员，女主",
+      "appearance": "冰蓝长发，琥珀色眼睛。",
+      "costume": "白蓝渐变制服与透明耳机。",
+      "voice": "青年女声，冷静清晰。",
+      "forbiddenDrift": ["保持冰蓝长发"]
+    }
+  ],
+  "props": [
+    {
+      "id": "P01",
+      "name": "记忆终端",
+      "appearance": "掌心大小的银色六边形设备。",
+      "storyFunction": "读取被删除的城市记忆。",
+      "forbiddenDrift": ["保持六边形"]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "SC01",
+      "name": "云港高架站",
+      "time": "深夜",
+      "weather": "小雨",
+      "layout": "悬空站台连接玻璃候车厅。",
+      "lighting": "冷蓝顶灯与远处霓虹反光。",
+      "palette": "天蓝、深靛、银白"
+    },
+    {
+      "id": "SC02",
+      "name": "城市档案馆",
+      "time": "零点",
+      "weather": "室内",
+      "layout": "环形数据墙围绕中央记忆井。",
+      "lighting": "数据流形成柔和轮廓光。",
+      "palette": "冰蓝、青白、少量琥珀"
+    }
+  ],
+  "sections": [
+    {
+      "id": "S01",
+      "durationSeconds": 15,
+      "goal": "建立危机并让两位主角相遇。",
+      "shots": [
+        {
+          "id": "S01-01",
+          "time": "0:00-0:04",
+          "size": "wide",
+          "camera": "缓慢推进",
+          "action": "雨幕中的云港高架站忽然熄灯，林澈独自站在站台边。",
+          "dialogue": "林澈：又是零点。",
+          "sound": "雨声、远处钟声",
+          "continuity": ["C01", "P01", "SC01"]
+        },
+        {
+          "id": "S01-02",
+          "time": "0:04-0:15",
+          "size": "medium close",
+          "camera": "横向跟拍",
+          "action": "阿蓝冲出玻璃门，将一枚发光的数据片递给林澈。",
+          "dialogue": "阿蓝：如果你还记得自己的名字，就跟我走。",
+          "sound": "急促脚步、电子提示音",
+          "continuity": ["C01", "C02", "P01", "SC01"]
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "durationSeconds": 15,
+      "goal": "揭示记忆被人为删除的线索。",
+      "shots": [
+        {
+          "id": "S02-01",
+          "time": "0:00-0:08",
+          "size": "medium",
+          "camera": "环绕",
+          "action": "两人抵达档案馆中央，记忆井投射出林澈过去的残影。",
+          "dialogue": "林澈：画面里的人，是我？",
+          "sound": "低频数据脉冲",
+          "continuity": ["C01", "C02", "P01", "SC02"]
+        },
+        {
+          "id": "S02-02",
+          "time": "0:08-0:15",
+          "size": "close-up",
+          "camera": "快速推近",
+          "action": "阿蓝在删除记录中发现自己的签名，神情第一次动摇。",
+          "dialogue": "阿蓝：删除你记忆的人……是我。",
+          "sound": "钟声骤停",
+          "continuity": ["C02", "SC02"]
+        }
+      ]
+    }
+  ]
+}

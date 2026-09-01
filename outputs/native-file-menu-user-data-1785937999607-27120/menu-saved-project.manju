@@ -1,0 +1,61 @@
+{
+  "format": "manju-project",
+  "version": 2,
+  "savedAt": "2026-08-05T13:53:21.710Z",
+  "project": {
+    "localProjectId": "local-df1cd8f3-f72d-4a04-a01b-8bfe4975f7af",
+    "name": "原生文件菜单验收项目：雨夜收到一封未",
+    "genre": "悬疑",
+    "ratio": "9:16",
+    "duration": "60秒",
+    "episodeCount": 1,
+    "synopsis": "原生文件菜单验收项目：雨夜收到一封未来来信。"
+  },
+  "content": {
+    "episodes": [
+      {
+        "id": 1,
+        "title": "第一集",
+        "scenes": 1,
+        "variant": 1,
+        "statuses": [],
+        "next": "编辑剧本"
+      }
+    ],
+    "scenes": [
+      {
+        "id": 1,
+        "episodeId": 1,
+        "title": "场景 1",
+        "location": "",
+        "time": "",
+        "weather": "",
+        "mainCharacterIds": [],
+        "status": "当前编辑",
+        "action": "",
+        "narration": ""
+      }
+    ],
+    "characters": [],
+    "props": [],
+    "shots": [],
+    "videoAssets": [],
+    "lines": [],
+    "episodeProductions": [
+      {
+        "episodeId": 1,
+        "audioTracks": [],
+        "subtitleCues": [],
+        "subtitleCuesInitialized": false,
+        "subtitleStyle": {
+          "fontSize": 52,
+          "color": "#FFFFFF",
+          "outlineColor": "#102B3A",
+          "backgroundOpacity": 42,
+          "position": "bottom",
+          "bold": true
+        }
+      }
+    ]
+  }
+}

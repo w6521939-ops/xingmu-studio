@@ -1,0 +1,19 @@
+{
+  "request_id": "159d3591-f45b-902a-b2e6-22148bf34557",
+  "output": {
+    "task_id": "b752b2ac-fcb4-4e4b-8662-1df3eba4349b",
+    "task_status": "SUCCEEDED",
+    "submit_time": "2026-08-06 00:40:38.339",
+    "scheduled_time": "2026-08-06 00:40:38.377",
+    "end_time": "2026-08-06 00:40:58.927",
+    "video_url": "https://dashscope-a717.oss-accelerate.aliyuncs.com/1d/7d/20260806/11df1eac/48902964-metadata_user_98dd62022f0ee1c3.mp4?Expires=1786034457&OSSAccessKeyId=LTAI5tJjG6wsHad1Sf7iezX4&Signature=TDvxp5KV8A5vwAh4zcXxPO6GqWs%3D",
+    "orig_prompt": "Maintain exact identity, clothing, props and room continuity between the supplied first and last frames. Lin Wan crosses the lighthouse doorway, sweeps the flashlight across peeling walls, notices the old cassette recorder, approaches and kneels beside it. Smooth medium tracking shot into a gentle push-in, cinematic realistic 3D animation. End exactly at the recorder pose in the last frame. No extra people, no duplicate limbs, no speaking, no subtitles, no text."
+  },
+  "usage": {
+    "video_count": 1,
+    "duration": 5,
+    "SR": 720,
+    "output_video_duration": 5,
+    "input_video_duration": 0
+  }
+}
