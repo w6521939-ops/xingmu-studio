@@ -1,0 +1,146 @@
+.xm-parallax-settings {
+  padding: 12px 16px;
+  background: var(--bg-card, #161d2e);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.xm-parallax-settings.enabled {
+  opacity: 1;
+}
+
+.xm-parallax-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.xm-parallax-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.xm-parallax-toggle input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.xm-parallax-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary, #e2e8f0);
+}
+
+.xm-parallax-badge {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(99, 102, 241, 0.15);
+  color: #818cf8;
+}
+
+.xm-parallax-body {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.xm-parallax-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.xm-parallax-label {
+  font-size: 12px;
+  color: var(--text-tertiary, #94a3b8);
+  min-width: 64px;
+}
+
+.xm-parallax-slider {
+  flex: 1;
+  height: 4px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  outline: none;
+}
+
+.xm-parallax-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent-primary, #6366f1);
+  cursor: pointer;
+}
+
+.xm-parallax-value {
+  font-size: 12px;
+  color: var(--text-primary, #e2e8f0);
+  min-width: 32px;
+  text-align: right;
+}
+
+.xm-parallax-segments {
+  display: flex;
+  gap: 4px;
+  flex: 1;
+}
+
+.xm-parallax-seg {
+  flex: 1;
+  padding: 4px 8px;
+  font-size: 11px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-tertiary, #94a3b8);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.xm-parallax-seg:hover {
+  border-color: rgba(99, 102, 241, 0.4);
+  color: var(--text-primary, #e2e8f0);
+}
+
+.xm-parallax-seg.active {
+  border-color: var(--accent-primary, #6366f1);
+  background: rgba(99, 102, 241, 0.12);
+  color: #818cf8;
+}
+
+.xm-parallax-info {
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 6px;
+}
+
+.xm-parallax-info-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--text-tertiary, #64748b);
+  padding: 2px 0;
+}
+
+.xm-parallax-info-row span:last-child {
+  color: var(--text-secondary, #94a3b8);
+  font-weight: 500;
+}
+
+.xm-parallax-hint {
+  font-size: 11px;
+  color: var(--text-tertiary, #64748b);
+  margin: 0;
+  line-height: 1.5;
+}

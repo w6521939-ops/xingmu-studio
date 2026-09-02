@@ -1,0 +1,118 @@
+.xm-provider-settings {
+  padding: 16px;
+  background: var(--bg-card, #161d2e);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.xm-provider-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.xm-provider-header h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary, #e2e8f0);
+}
+
+.xm-provider-refresh {
+  padding: 4px 12px;
+  font-size: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-secondary, #94a3b8);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.xm-provider-refresh:hover {
+  border-color: var(--accent-primary, #6366f1);
+  color: var(--accent-primary, #818cf8);
+}
+
+.xm-provider-hint {
+  font-size: 12px;
+  color: var(--text-tertiary, #64748b);
+  margin: 0 0 16px;
+  line-height: 1.5;
+}
+
+.xm-provider-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.xm-provider-row:first-of-type {
+  border-top: none;
+}
+
+.xm-provider-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 72px;
+  padding-top: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary, #94a3b8);
+}
+
+.xm-provider-icon {
+  font-size: 14px;
+}
+
+.xm-provider-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  flex: 1;
+}
+
+.xm-provider-chip {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.xm-provider-chip:hover {
+  border-color: rgba(99, 102, 241, 0.4);
+  background: rgba(99, 102, 241, 0.06);
+}
+
+.xm-provider-chip.active {
+  border-color: var(--accent-primary, #6366f1);
+  background: rgba(99, 102, 241, 0.12);
+}
+
+.xm-chip-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary, #e2e8f0);
+}
+
+.xm-chip-model {
+  font-size: 10px;
+  color: var(--text-tertiary, #64748b);
+}
+
+.xm-provider-empty {
+  font-size: 12px;
+  color: var(--text-tertiary, #64748b);
+  padding: 6px 0;
+  font-style: italic;
+}
