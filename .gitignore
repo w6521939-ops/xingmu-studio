@@ -14,17 +14,39 @@ release
 *.local
 key.txt
 workspace.txt
+.env
+.env.*
+!.env.example
+
+# Project data (local-only)
 .manju-studio/
 .venv/
 backend/data/
 *.db-wal
 *.db-shm
 
+# Generated outputs (not for public repo)
+outputs/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Electron user-data and cache
+**/user-data-*/
+*.cache
+*.old
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
