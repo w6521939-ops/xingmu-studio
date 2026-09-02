@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Check for hardcoded keys
+        run: |
+          if grep -rE "(sk-[a-zA-Z0-9]{20,}|AIza[a-zA-Z0-9]{30,})" src/ electron/ --include="*.js" --include="*.jsx" --include="*.ts"; then
+            echo "::error::Found potential hardcoded API keys"
+            exit 1
+          fi
+
+      - name: Verify LICENSE exists
+        run: test -f LICENSE
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        if: github.event_name == 'push'
+        with:
+          name: build-output
+          path: dist/
+          retention-days: 7
